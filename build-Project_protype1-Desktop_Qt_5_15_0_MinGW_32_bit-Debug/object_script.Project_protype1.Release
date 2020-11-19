@@ -1,0 +1,11 @@
+release/cuenta.o
+release/inicio_dialog.o
+release/libro.o
+release/main.o
+release/menu_dialog.o
+release/principal.o
+release/registro_dialog.o
+release/moc_inicio_dialog.o
+release/moc_menu_dialog.o
+release/moc_principal.o
+release/moc_registro_dialog.o

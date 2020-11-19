@@ -274,6 +274,7 @@ Makefile: ../Project_protype1/Project_protype1.pro C:/Qt/5.15.0/mingw81_32/mkspe
 		../Project_protype1/Project_protype1.pro \
 		C:/Qt/5.15.0/mingw81_32/lib/Qt5Widgets.prl \
 		C:/Qt/5.15.0/mingw81_32/lib/Qt5Gui.prl \
+		C:/Qt/5.15.0/mingw81_32/lib/Qt5Sql.prl \
 		C:/Qt/5.15.0/mingw81_32/lib/Qt5Core.prl \
 		C:/Qt/5.15.0/mingw81_32/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile ..\Project_protype1\Project_protype1.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
@@ -481,6 +482,7 @@ C:/Qt/5.15.0/mingw81_32/mkspecs/features/lex.prf:
 ../Project_protype1/Project_protype1.pro:
 C:/Qt/5.15.0/mingw81_32/lib/Qt5Widgets.prl:
 C:/Qt/5.15.0/mingw81_32/lib/Qt5Gui.prl:
+C:/Qt/5.15.0/mingw81_32/lib/Qt5Sql.prl:
 C:/Qt/5.15.0/mingw81_32/lib/Qt5Core.prl:
 C:/Qt/5.15.0/mingw81_32/mkspecs/features/build_pass.prf:
 qmake: FORCE

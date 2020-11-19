@@ -1,0 +1,11 @@
+debug/cuenta.o
+debug/inicio_dialog.o
+debug/libro.o
+debug/main.o
+debug/menu_dialog.o
+debug/principal.o
+debug/registro_dialog.o
+debug/moc_inicio_dialog.o
+debug/moc_menu_dialog.o
+debug/moc_principal.o
+debug/moc_registro_dialog.o
