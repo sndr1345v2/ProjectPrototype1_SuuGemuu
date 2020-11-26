@@ -1,0 +1,13 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>images/objetivo.png</file>
+    <file>images/abaco.png</file>
+    <file>images/grafico.png</file>
+    <file>images/bear.png</file>
+    <file>images/chatbot.png</file>
+    <file>images/chat_box.png</file>
+    <file>images/ayuda.png</file>
+    <file>images/settings.png</file>
+    <file>images/robot.png</file>
+</qresource>
+</RCC>
