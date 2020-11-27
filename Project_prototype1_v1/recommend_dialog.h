@@ -3,7 +3,6 @@
 
 #include <QDialog>
 #include <inicio_dialog.h>
-
 namespace Ui {
 class recommend_dialog;
 }

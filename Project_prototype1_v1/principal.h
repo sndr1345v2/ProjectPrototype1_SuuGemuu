@@ -2,16 +2,24 @@
 #define PRINCIPAL_H
 #include <inicio_dialog.h>
 #include <recommend_dialog.h>
+#include <QObject>
 
-class Principal
+class Principal : public QObject
 {
-public:
-    Principal();
+    Q_OBJECT
 
+private:
+
+public:
+    explicit Principal(QObject *parent = nullptr);
     inicio_dialog *inicio;
     recommend_dialog *recom;
 
-    void Start();
+    void start();
+
+public slots:
+    void start_recom();
+
 };
 
 #endif // PRINCIPAL_H

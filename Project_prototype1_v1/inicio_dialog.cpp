@@ -8,6 +8,7 @@ inicio_dialog::inicio_dialog(QWidget *parent) :
 {
     ui->setupUi(this);
 
+
     QString cs1="QPushButton {"
                 " background-color: #f5f5f5;"
                 "border:#f5f5f5;"
@@ -49,7 +50,26 @@ inicio_dialog::inicio_dialog(QWidget *parent) :
     ui->pushButton_recommend->setStyleSheet(cs3);
     ui->pushButton_ayuda->setStyleSheet(cs4);
     ui->pushButton_config->setStyleSheet(cs4);
+
+
+    conectBase();
+    QSqlQuery *query =  new QSqlQuery(data);
+    query->prepare("select* from users where username = 'sndr1345'");
+    query->exec();
+    while (query->next()) {
+        QString name (query->value(0).toString());
+        QPixmap path (query->value(5).toString());
+        ui->user_name->setText(name);
+        int w = ui->user_icon->width();
+        int h = ui->user_icon->height();
+        ui->user_icon->setPixmap(path.scaled(w,h,Qt::KeepAspectRatio));
+
+    }
+
+
 }
+
+
 
 inicio_dialog::~inicio_dialog()
 {
@@ -58,5 +78,12 @@ inicio_dialog::~inicio_dialog()
 
 void inicio_dialog::on_pushButton_learn_clicked()
 {
+
+}
+
+void inicio_dialog::on_pushButton_recommend_clicked()
+{
+   accept();
+   emit inicia_recomend(true);
 
 }
